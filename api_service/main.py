@@ -4,7 +4,10 @@ from .database import models, db
 
 app = FastAPI()
 
-models.Base.metadata.create_all(db.engine)
+# models.Base.metadata.create_all(db.engine)
 
-app.include_router(end_points.router)
+# app.include_router(end_points.router)
 
+@app.get('/')
+def main():
+    return "successfully deloyed!"
