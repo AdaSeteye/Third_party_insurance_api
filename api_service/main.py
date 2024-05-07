@@ -10,4 +10,4 @@ app = FastAPI()
 
 @app.get('/')
 def main():
-    return "successfully deloyed!"
+    return {'msg': 'successfully deloyed!'}
