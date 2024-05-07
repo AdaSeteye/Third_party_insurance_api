@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from . api import end_points
-from .database import models, db
+# from . api import end_points
+# from .database import models, db
 
 app = FastAPI()
 
@@ -10,4 +10,4 @@ app = FastAPI()
 
 @app.get('/')
 def main():
-    return {'msg': 'successfully deloyed!'}
+    return {'msg': 'successfully deployed!'}
